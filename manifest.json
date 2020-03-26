@@ -11,9 +11,10 @@
   },
 
     "permissions": [
+    "http://*/", 
+    "https://*/",
     "webRequest",
     "webRequestBlocking",
-    "webRequest", 
     "alarms",
     "theme",
     "cookies",
@@ -25,6 +26,10 @@
   "default_icon": "icons/OfficialICELogoTransparent.png",
   "default_title": "TheUltimateDevelopmentTool",
   "default_popup": "popup/popup.html"
+  },
+
+  "background": {
+    "scripts": ["adblock/block.js"]
   }
 
 
