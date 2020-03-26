@@ -1,0 +1,32 @@
+{
+
+  "manifest_version": 2,
+  "name": "ultimateDevelopmentTool",
+  "version": "0.0.1",
+
+  "description": "The ultimate development tool. Made by Ice100k at I.C.E (interlectual creative electronics).",
+
+  "icons": {
+    "48": "icons/OfficialICELogoTransparent.png"
+  },
+
+    "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "webRequest", 
+    "alarms",
+    "theme",
+    "cookies",
+    "<all_urls>",
+    "tabs"
+  ],
+
+  "browser_action": {
+  "default_icon": "icons/OfficialICELogoTransparent.png",
+  "default_title": "TheUltimateDevelopmentTool",
+  "default_popup": "popup/popup.html"
+  }
+
+
+
+}
