@@ -9,7 +9,7 @@
   "url": "https://gabriel.evanshill.co.uk/aboutME/ice100k.php"
   },
 
-  "description": "This is the ultimate development tool, it is bucket loaded with lots of useful tools to improve your developing experience. This extention includes a built in ad-blocker and various tool to manage cookies as well as a password generator!",
+  "description": "This is the ultimate development tool, it is bucket loaded with lots of useful tools to improve your developing experience. This extention includes a built in ad-blocker and various tool to manage cookies as well as a password generator! Our ad blocking uses cookies ti control all Internet traffic to your pc therefore letting us extend our ad blocking outside of firefox and onto other applications on your pc!",
 
   "icons": {
     "48": "icons/OfficialICELogoTransparent.png"
@@ -31,10 +31,6 @@
   "default_icon": "icons/OfficialICELogoTransparent.png",
   "default_title": "TheUltimateDevelopmentTool",
   "default_popup": "popup/popup.html"
-  },
-
-  "background": {
-    "scripts": ["adblock/block.js"]
   }
 
 }
