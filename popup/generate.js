@@ -4,7 +4,9 @@
 
 
 			var button = document. createElement("button");
+			
 			button.innerHTML = "Generate password!";
+			
 			button.addEventListener ("click", function() {
 				
 		
