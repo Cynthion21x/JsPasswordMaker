@@ -1,4 +1,4 @@
-chrome.webRequest.onBeforeRequest.addListener(
+firefox.webRequest.onBeforeRequest.addListener(
 	function(details) {
 		console.log("blocking:", details.url);
 		return {cancel: true };
