@@ -4,7 +4,16 @@
   "name": "ultimateDevelopmentTool",
   "version": "0.0.1",
 
+<<<<<<< HEAD
   "description": "This is the ultimate development tool, it is bucket loaded with lots of useful tools to improve your developing experience, and it isnt just for developing, it is also very useful for people who just want to surf the net. This extention includes a built in ad-blocker and various tool to manage cookies as well as a password generator!",
+=======
+  "developer": {
+  "name": "ice100k, Thechrisperson1",
+  "url": "https://gabriel.evanshill.co.uk/aboutME/ice100k.php"
+  },
+
+  "description": "This is the ultimate development tool, it is bucket loaded with lots of useful tools to improve your developing experience. This extention includes a built in ad-blocker and various tool to manage cookies as well as a password generator!",
+>>>>>>> 1e80d609be2b19a7ce7dc9c9c76aff24d3b90d4e
 
   "icons": {
     "48": "icons/OfficialICELogoTransparent.png"
@@ -31,7 +40,5 @@
   "background": {
     "scripts": ["block.js"]
   }
-
-
 
 }
