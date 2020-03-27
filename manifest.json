@@ -4,7 +4,7 @@
   "name": "ultimateDevelopmentTool",
   "version": "0.0.1",
 
-  "description": "This is the ultimate development tool, it is bucket loaded with lots of useful tools to improve your developing experience. This extention includes a built in ad-blocker and various tool to manage cookies as well as a password generator!",
+  "description": "This is the ultimate development tool, it is bucket loaded with lots of useful tools to improve your developing experience, and it isnt just for developing, it is also very useful for people who just want to surf the net. This extention includes a built in ad-blocker and various tool to manage cookies as well as a password generator!",
 
   "icons": {
     "48": "icons/OfficialICELogoTransparent.png"
@@ -24,12 +24,12 @@
 
   "browser_action": {
   "default_icon": "icons/OfficialICELogoTransparent.png",
-  "default_title": "TheUltimateDevelopmentTool",
+  "default_title": "UltimateDevelopmentTool",
   "default_popup": "popup/popup.html"
   },
 
   "background": {
-    "scripts": ["adblock/block.js"]
+    "scripts": ["block.js"]
   }
 
 

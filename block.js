@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-firefox.webRequest.onBeforeRequest.addListener(
 =======
 browser.webRequest.onBeforeRequest.addListener(
 >>>>>>> 93e5fbba615f7137013cb888803805b8716cce6e
