@@ -24,7 +24,7 @@ break;
 if (find_name==-1) {
 document.write(adcode);
 } else {
-var ad_split = part_of_split.split(“=”);
+var ad_split = part_of_split.split("=");
 var last = ad_split[1];
 if (last!=0) {
 document.write(adcode);
