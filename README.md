@@ -1,4 +1,8 @@
 # UltimateDevelopmentTool
-a extention here to help improve your mozilla firefox developing experience. This add on includes an adblocking feture as well as various tools to help you while developing using firefox. We use cookies to improve our ad blocking to direct ALL internet traffic to your pc. That means we can extend our ad blocking beyond firefox from your browser!
+Ultimate Development Tool has an adblocker which runs behind the scenes, and can block all ads not just on sites, on youtube as well, it uses a cookie, (Not a malicious one!) to look at browsing traffic to and from your machine and check for ads(it does not do anything else with your browsing traffic), it also has:
 
-This Addon Is Still In Heavy development
+Cookie Viewer
+Tracker Blocker
+Lots Of Developer Tools
+Password Generator
+HTTP Request Viewer
