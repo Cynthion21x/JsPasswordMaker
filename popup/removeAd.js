@@ -1,4 +1,4 @@
-var adlink=”change this text!”;
+var adlink="change this text!";
 //
 // Time in seconds until the ads come back
 // (24 hours):
@@ -8,15 +8,15 @@ var timeout=60*60*24;
 // Do not change anything in the code below:
 var showads = 1;
 function adMessage(adcode) {
-if (document.cookie == “”) {
+if (document.cookie == "") {
 document.write(adcode);
 } else {
 var the_cookie = document.cookie;
 the_cookie = unescape(the_cookie);
-the_cookie_split = the_cookie.split(“;”);
+the_cookie_split = the_cookie.split(";");
 for (loop=0;loop<the_cookie_split.length;loop++) {
 var part_of_split = the_cookie_split[loop];
-var find_name = part_of_split.indexOf(“ad”);
+var find_name = part_of_split.indexOf("ad");
 if (find_name!=-1) {
 break;
    }
@@ -39,8 +39,8 @@ var today = new Date();
 var the_date = new Date();
 the_date.setTime(today.getTime() + 1000 * timeout);
 var the_cookie_date = the_date.toGMTString();
-var the_cookie = “ad=”+show;
-var the_cookie = the_cookie + “;expires=” + the_cookie_date;
+var the_cookie = "ad="+show;
+var the_cookie = the_cookie + ";expires=" + the_cookie_date;
 document.cookie = the_cookie;
 location.reload(true);
 }
@@ -56,4 +56,4 @@ if (window.Event) {
 window.captureEvents(Event.CLICK);
 }
 window.onClick = handleClick;
-adMessage(”);
+adMessage("");
