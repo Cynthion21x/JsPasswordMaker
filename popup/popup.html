@@ -67,9 +67,8 @@
 
 	<center>
  <div class="topnav">
-  <a class="active" href="popup.html">Home</a>
+  <a class="active" href="popup.html">Internet Speed Test</a>
   <a href="Cookie.html">Cookie Control</a>
-  <a href="Tracker.html">Tracker Control</a>
   <a href="Developer.html">Developer Tools</a>
   <a href="Password.html">Password Generator</a>
   <a href="Request.html">HTTP Request Viewer</a>
@@ -77,44 +76,85 @@
 </center>
 	  
 
-<script type="text/javascript" src="removeAd.js"></script>
+
 	</head>
 	
 	<body>
 
 
-	<h3 class="title">Home: </h3>
+	<h3 class="title">Speed Test: </h3>
 	<br>
 	<br>
 	
 	<h5></h5>
 
-<span onClick="writeCookie(0)">
-<script language="javascript">
-<!–
-adMessage("The ad: You really have to buy this stuff");
-// –>
-</script>
-</span>
-<br><br>
-<script type="text/javascript">
-<!–
-if (showads) {
-  document.write("Remove the ad by clicking it.")
-}
-//–>
-</script>
-<!– Optional To Show Ads Again –>
-<script type="text/javascript">
-<!–
-if (!showads) {
-  document.write("<form><input type=button value=’Ads back’ onClick=writeCookie(1)></form>")
-}
-//–>
-</script>
+
+
+
 
 	</body>
 	<script>
+var imageAddr = "http://www.kenrockwell.com/contax/images/g2/examples/31120037-5mb.jpg"; 
+var downloadSize = 4995374; //bytes
 
+function ShowProgressMessage(msg) {
+    if (console) {
+        if (typeof msg == "string") {
+            console.log(msg);
+        } else {
+            for (var i = 0; i < msg.length; i++) {
+                console.log(msg[i]);
+            }
+        }
+    }
+    
+    var oProgress = document.getElementById("progress");
+    if (oProgress) {
+        var actualHTML = (typeof msg == "string") ? msg : msg.join("<br />");
+        oProgress.innerHTML = actualHTML;
+    }
+}
+
+function InitiateSpeedDetection() {
+    ShowProgressMessage("Loading the image, please wait...");
+    window.setTimeout(MeasureConnectionSpeed, 1);
+};    
+
+if (window.addEventListener) {
+    window.addEventListener('load', InitiateSpeedDetection, false);
+} else if (window.attachEvent) {
+    window.attachEvent('onload', InitiateSpeedDetection);
+}
+
+function MeasureConnectionSpeed() {
+    var startTime, endTime;
+    var download = new Image();
+    download.onload = function () {
+        endTime = (new Date()).getTime();
+        showResults();
+    }
+    
+    download.onerror = function (err, msg) {
+        ShowProgressMessage("Invalid image, or error downloading");
+    }
+    
+    startTime = (new Date()).getTime();
+    var cacheBuster = "?nnn=" + startTime;
+    download.src = imageAddr + cacheBuster;
+    
+    function showResults() {
+        var duration = (endTime - startTime) / 1000;
+        var bitsLoaded = downloadSize * 8;
+        var speedBps = (bitsLoaded / duration).toFixed(2);
+        var speedKbps = (speedBps / 1024).toFixed(2);
+        var speedMbps = (speedKbps / 1024).toFixed(2);
+        ShowProgressMessage([
+            "Your connection speed is:", 
+            speedBps + " bps", 
+            speedKbps + " kbps", 
+            speedMbps + " Mbps"
+        ]);
+    }
+}
 	</script>
 </html>
