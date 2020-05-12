@@ -68,24 +68,24 @@
 	<center>
  <div class="topnav">
   <a class="active" href="popup.html">Internet Speed Test</a>
-  <a href="Cookie.html">Cookie Control</a>
-  <a href="Developer.html">Developer Tools</a>
-  <a href="Password.html">Password Generator</a>
-  <a href="Request.html">HTTP Request Viewer</a>
-</div> 
+  <a href="cookies\Cookie.html">Cookie Control</a>
+  <a href="devTools\Developer.html">Developer Tools</a>
+  <a href="password\Password.html">Password Generator</a>
+  <a href="request\Request.html">HTTP Request Viewer</a>
+</div>
 </center>
-	  
+
 
 
 	</head>
-	
+
 	<body>
 
 
 	<h3 class="title">Speed Test: </h3>
 	<br>
 	<br>
-	
+
 	<h5></h5>
 
 
@@ -94,7 +94,7 @@
 
 	</body>
 	<script>
-var imageAddr = "http://www.kenrockwell.com/contax/images/g2/examples/31120037-5mb.jpg"; 
+var imageAddr = "http://www.kenrockwell.com/contax/images/g2/examples/31120037-5mb.jpg";
 var downloadSize = 4995374; //bytes
 
 function ShowProgressMessage(msg) {
@@ -107,7 +107,7 @@ function ShowProgressMessage(msg) {
             }
         }
     }
-    
+
     var oProgress = document.getElementById("progress");
     if (oProgress) {
         var actualHTML = (typeof msg == "string") ? msg : msg.join("<br />");
@@ -118,7 +118,7 @@ function ShowProgressMessage(msg) {
 function InitiateSpeedDetection() {
     ShowProgressMessage("Loading the image, please wait...");
     window.setTimeout(MeasureConnectionSpeed, 1);
-};    
+};
 
 if (window.addEventListener) {
     window.addEventListener('load', InitiateSpeedDetection, false);
@@ -133,15 +133,15 @@ function MeasureConnectionSpeed() {
         endTime = (new Date()).getTime();
         showResults();
     }
-    
+
     download.onerror = function (err, msg) {
         ShowProgressMessage("Invalid image, or error downloading");
     }
-    
+
     startTime = (new Date()).getTime();
     var cacheBuster = "?nnn=" + startTime;
     download.src = imageAddr + cacheBuster;
-    
+
     function showResults() {
         var duration = (endTime - startTime) / 1000;
         var bitsLoaded = downloadSize * 8;
@@ -149,9 +149,9 @@ function MeasureConnectionSpeed() {
         var speedKbps = (speedBps / 1024).toFixed(2);
         var speedMbps = (speedKbps / 1024).toFixed(2);
         ShowProgressMessage([
-            "Your connection speed is:", 
-            speedBps + " bps", 
-            speedKbps + " kbps", 
+            "Your connection speed is:",
+            speedBps + " bps",
+            speedKbps + " kbps",
             speedMbps + " Mbps"
         ]);
     }
