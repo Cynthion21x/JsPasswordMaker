@@ -3,11 +3,6 @@
 	<head>
 		<style>
 
-				body,html {
-					width: 900px;
-					height: 500px;
-				}
-
 				body {
 					overflow-y: hidden;
 					overflow-x: hidden;
@@ -58,27 +53,37 @@
 					  position:absolute;
 					  display:block;
 					}
-          
+
 				.all{
 					left: 48%;
 				}
+
+        /*#inputbg{
+          background-color: rgba(0, 0, 0, 0.5);
+          width: 50%;
+
+          height: 50%;
+
+          padding: 3px;
+          border-radius: 7px;
+        }*/
 
 		</style>
 	</head>
 
 	<body>
-		<div class="all">
-		<center>
-			<div class="container">
-			 <h2 class="todo__caption">Password generator</h2>
-			 <br>
-			 <br>
-			 <input type="text" id="keyword" size="50" placeholder="Some key word here">
-			 <br> <br>
-			 <div id = "pass_text" style="font-weight: bold"></div>
-			 <br> <br>
-		</div>
-	</div>
+    <center>
+      <div class="all" id="inputbg">
+        <div id="container">
+          <h2 align="center" class="todo__caption">Password generator</h2>
+          <br>
+          <br>
+          <input align="center" type="text" id="keyword" size="50" placeholder="Some key word here">
+          <br> <br>
+          <div id = "pass_text" style="font-weight: bold"></div>
+          <br> <br>
+        </div>
+      </div>
 	</center>
 
 		<script src="generate.js"></script>

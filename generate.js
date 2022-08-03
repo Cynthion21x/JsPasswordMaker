@@ -3,7 +3,9 @@
 			var text, password;
 
 
-			var button = document. createElement("button");
+			var button = document.createElement("button");
+
+			document.getElementById('container').appendChild(button);  
 
 			button.innerHTML = "Generate password!";
 
