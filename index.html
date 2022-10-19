@@ -50,12 +50,17 @@
 					  left:42.7%;
 					  text-align: center;
 					  margin: auto;
-					  position:absolute;
 					  display:block;
 					}
 
 				.all{
 					left: 48%;
+				}
+
+				.input {
+
+					width: 70%;
+
 				}
 
         /*#inputbg{
@@ -72,19 +77,27 @@
 	</head>
 
 	<body>
-    <center>
-      <div class="all" id="inputbg">
-        <div id="container">
-          <h2 align="center" class="todo__caption">Password generator</h2>
-          <br>
-          <br>
-          <input align="center" type="text" id="keyword" size="50" placeholder="Some key word here">
-          <br> <br>
-          <div id = "pass_text" style="font-weight: bold"></div>
-          <br> <br>
-        </div>
-      </div>
-	</center>
+
+		<center>
+
+			<div class="all" id="inputbg">
+				
+				<div id="container">
+				<h2 align="center">Password generator</h2>
+				<br> <br>
+
+				<input class="input" align="center" type="text" id="keyword" size="50" placeholder="Some key word here">
+
+				<br> <br>
+
+				<div id = "pass_text" style="font-weight: bold"></div>
+
+				<br> <br>
+				
+				</div>
+			</div>
+
+		</center>
 
 		<script src="generate.js"></script>
 
