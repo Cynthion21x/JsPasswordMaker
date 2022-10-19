@@ -1,4 +1,3 @@
-const { arrayBuffer } = require("stream/consumers");
 
 			var userin;
 			var text, password;
@@ -41,11 +40,6 @@ const { arrayBuffer } = require("stream/consumers");
 
 			  while (0 !== currentIndex) {
 
-				if(array[currentIndex] == " "){
-
-					array[currentIndex] = "-";
-
-				}
 
 			    randomIndex = Math.floor(Math.random() * currentIndex);
 			    currentIndex -= 1;
