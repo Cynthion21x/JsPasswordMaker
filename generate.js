@@ -26,7 +26,7 @@
 
 				password = userinb
 
-				document.getElementById('pass_text').innerHTML = password.join("");
+				document.getElementById('pass_text').innerHTML = password.join("").replace(/ /g,'');
 
 			});
 
