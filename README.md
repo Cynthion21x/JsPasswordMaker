@@ -1,4 +1,4 @@
 # Password Generator
 
 A website for generating passwords from simple words. 
-The website is very simple and basic. It uses a bit of javascript to mess up and word you input :P
+The website is very simple it takes in the word you give and scrambles it up so you have a complicated password
