@@ -14,6 +14,10 @@
 
 				userin = document.getElementById('keyword').value;
 
+				if(userin == null || userin ==""){
+					return alert("Enter any keyword!")
+				}
+
 				var extraCharacters = ["1","2","3","4","5","6","7","8","9","0",";","!","$","]","#"];
 
 				userinb = userin.split("");
