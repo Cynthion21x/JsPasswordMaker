@@ -1,79 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<style>
-
-				body {
-					overflow-y: hidden;
-					overflow-x: hidden;
-					margin: 0;
-					animation: gradientBG 15s linear infinite alternate;
-					font-family: verdana;
-					color: white;
-				}
-
-				@keyframes gradientBG {
-					0% {
-						background-color:#00ffff
-					}
-					50% {
-						background-color:#ff3399
-					}
-					100% {
-						background-color:#00ffcc
-					}
-				}
-
-				.title{
-					text-align: center;
-					display: flex;
-					justify-content: center;
-				}
-
-				input{
-					display: inline-block;
-				    margin: 20px auto; border: 2px solid #eee;
-				    padding: 10px 20px;
-				    font-family:Verdana, Arial, sans-serif;
-				    font-size: 16px;
-				}
-
-				button{
-					  background-color: #ff33cc;
-					  border: none;
-					  color: white;
-					  padding: 15px 32px;
-					  text-align: center;
-					  text-decoration: none;
-					  display: inline-block;
-					  font-size: 16px;
-					  left:42.7%;
-					  text-align: center;
-					  margin: auto;
-					  display:block;
-					}
-
-				.all{
-					left: 48%;
-				}
-
-				.input {
-
-					width: 70%;
-
-				}
-
-        /*#inputbg{
-          background-color: rgba(0, 0, 0, 0.5);
-          width: 50%;
-
-          height: 50%;
-
-          padding: 3px;
-          border-radius: 7px;
-        }*/
-
-		</style>
+		<link rel="stylesheet" href="style.css">
 	</head>
 
 	<body>
@@ -83,10 +11,10 @@
 			<div class="all" id="inputbg">
 				
 				<div id="container">
-				<h2 align="center">Password generator</h2>
+				<h2 align="center">Password Generator</h2>
 				<br> <br>
 
-				<input class="input" align="center" type="text" id="keyword" size="50" placeholder="Some key word here">
+				<input class="input" align="center" type="text" id="keyword" size="50" placeholder="Some keyword here">
 
 				<br> <br>
 
